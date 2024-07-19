@@ -1,5 +1,5 @@
 {
-  "exclude": ["./res/**/*.tsx", "./dist/**/*.*"],
+  "exclude": ["src/res/**/*.tsx", "./dist/**/*.*"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 

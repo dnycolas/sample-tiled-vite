@@ -1,15 +1,28 @@
-import * as ex from 'excalibur';
-import { Resources, loader } from './resources';
+import {Engine,FadeInOut} from 'excalibur';
+import { loader } from './resources';
+import { cenaEntrada } from './scenes/cenaEntrada';
+import { salaInicial } from './scenes/salaInicial';
+import { jogoPingPong } from './scenes/jogoPingPong';
+import { cenaCorredor } from './scenes/cenaCorredor';
+
 import { Player } from './player';
 
-const game = new ex.Engine({
-    width: 800,
-    height: 600,
-    canvasElementId: 'game',
+
+const game = new Engine({
+    width: 960,
+    height: 640,
+    canvasElementId: 'jogo',
     pixelArt: true,
     pixelRatio: 2
-});
+}); 
+
+game.addScene("cenaBemVindo", new cenaEntrada());
+game.addScene("SalaMyd", new salaInicial());
+game.addScene("PingPongMyd", new jogoPingPong());
+game.addScene("corredor", new cenaCorredor())
+
 
 game.start(loader).then(() => {
-    Resources.TiledMap.addToScene(game.currentScene);
+    game.goToScene("cenaBemVindo")
+    
 });

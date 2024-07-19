@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiled Vite Sample</title>
-</head>
-<body>
-    <canvas id="game"></canvas>
+    <title>Hello Myd</title>
     <script type="module" src="./src/main.ts"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Signika+Negative:300,400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <div class="container-game">
+        <canvas id="jogo"></canvas>
+
+        <div class="swarm"></div>
+
+        <!-- <img src="src/maps/tilesets/cup_Myd.png" alt="" class="cupMyd" style="display: none;"> -->
+
+        <button id="startButton" style="display: none;" >jogar</button>
+
+        <!-- <p>Pegou a xicara</p> -->
+    </div>
 </body>
+
 </html>

@@ -16,7 +16,8 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "@excaliburjs/plugin-tiled": "0.29.0",
-    "excalibur": "0.29.0"
+    "excalibur": "^0.29.0",
+    "gsap-trial": "^3.12.5"
   },
   "devDependencies": {
     "typescript": "5.3.3",
